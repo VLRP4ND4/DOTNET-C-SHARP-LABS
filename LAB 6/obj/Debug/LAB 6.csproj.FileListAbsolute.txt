@@ -1,0 +1,11 @@
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB 6.csproj.AssemblyReference.cache
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB_6.FormGallery.resources
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB_6.FormMain.resources
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB 6.csproj.GenerateResource.cache
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB 6.csproj.CoreCompileInputs.cache
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\bin\Debug\LAB 6.exe.config
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\bin\Debug\LAB 6.exe
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\bin\Debug\LAB 6.pdb
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB 6.exe
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB 6.pdb
+C:\Users\VLR\source\repos\DOTNET LAB\LAB 6\obj\Debug\LAB 6.exe.config
