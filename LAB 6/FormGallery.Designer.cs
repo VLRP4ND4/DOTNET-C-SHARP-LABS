@@ -30,120 +30,116 @@ namespace LAB_6
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.labelAuthor = new System.Windows.Forms.Label();
+            this.authorText = new System.Windows.Forms.RichTextBox();
+            this.galleryPicture = new System.Windows.Forms.PictureBox();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonNext = new System.Windows.Forms.Button();
+            this.buttonBackMenu = new System.Windows.Forms.Button();
+            this.labelName = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labelAuthor
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(56, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(694, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Автор";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAuthor.Location = new System.Drawing.Point(56, 21);
+            this.labelAuthor.Name = "labelAuthor";
+            this.labelAuthor.Size = new System.Drawing.Size(694, 24);
+            this.labelAuthor.TabIndex = 0;
+            this.labelAuthor.Text = "Автор";
+            this.labelAuthor.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // richTextBox1
+            // authorText
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(56, 58);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(694, 79);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Описание автора";
+            this.authorText.BackColor = System.Drawing.SystemColors.Control;
+            this.authorText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.authorText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.authorText.Location = new System.Drawing.Point(56, 58);
+            this.authorText.Name = "authorText";
+            this.authorText.Size = new System.Drawing.Size(694, 79);
+            this.authorText.TabIndex = 2;
+            this.authorText.Text = "Описание автора";
             // 
-            // pictureBox1
+            // galleryPicture
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(56, 155);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(694, 392);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.galleryPicture.Location = new System.Drawing.Point(56, 155);
+            this.galleryPicture.Name = "galleryPicture";
+            this.galleryPicture.Size = new System.Drawing.Size(694, 392);
+            this.galleryPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.galleryPicture.TabIndex = 3;
+            this.galleryPicture.TabStop = false;
             // 
-            // button1
+            // buttonBack
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 56);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBack.Location = new System.Drawing.Point(12, 320);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(32, 56);
+            this.buttonBack.TabIndex = 4;
+            this.buttonBack.Text = "<";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonNext
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(760, 320);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 56);
-            this.button2.TabIndex = 5;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonNext.Location = new System.Drawing.Point(760, 320);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(32, 56);
+            this.buttonNext.TabIndex = 5;
+            this.buttonNext.Text = ">";
+            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // buttonBackMenu
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(295, 608);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 28);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Назад в меню";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonBackMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBackMenu.Location = new System.Drawing.Point(295, 608);
+            this.buttonBackMenu.Name = "buttonBackMenu";
+            this.buttonBackMenu.Size = new System.Drawing.Size(220, 28);
+            this.buttonBackMenu.TabIndex = 6;
+            this.buttonBackMenu.Text = "Назад в меню";
+            this.buttonBackMenu.UseVisualStyleBackColor = true;
+            this.buttonBackMenu.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label2
+            // labelName
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(56, 563);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(694, 24);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Название";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.Location = new System.Drawing.Point(56, 563);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(694, 24);
+            this.labelName.TabIndex = 7;
+            this.labelName.Text = "Название";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FormGallery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 661);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.buttonBackMenu);
+            this.Controls.Add(this.buttonNext);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.galleryPicture);
+            this.Controls.Add(this.authorText);
+            this.Controls.Add(this.labelAuthor);
             this.Name = "FormGallery";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.galleryPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private Label label2;
+        private System.Windows.Forms.Label labelAuthor;
+        private System.Windows.Forms.RichTextBox authorText;
+        private System.Windows.Forms.PictureBox galleryPicture;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Button buttonBackMenu;
+        private Label labelName;
     }
 }

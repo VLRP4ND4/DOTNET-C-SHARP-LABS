@@ -32,10 +32,10 @@ namespace LAB_6
                 return;
             }
 
-            label1.Text = currentArtist.Name;
-            richTextBox1.Text = currentArtist.Bio;
+            labelAuthor.Text = currentArtist.Name;
+            authorText.Text = currentArtist.Bio;
 
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            galleryPicture.SizeMode = PictureBoxSizeMode.Zoom;
             ShowCurrentImage();
 
             this.FormClosed += WinFormClosed;
@@ -45,14 +45,14 @@ namespace LAB_6
         {
             if (currentArtist.ImagePaths == null || currentArtist.ImagePaths.Count == 0)
             {
-                if (pictureBox1.Image != null)
+                if (galleryPicture.Image != null)
                 {
-                    pictureBox1.Image.Dispose();
-                    pictureBox1.Image = null;
+                    galleryPicture.Image.Dispose();
+                    galleryPicture.Image = null;
                 }
 
-                button1.Enabled = false;
-                button2.Enabled = false;
+                buttonBack.Enabled = false;
+                buttonNext.Enabled = false;
                 return;
             }
 
@@ -63,19 +63,19 @@ namespace LAB_6
                 currentImageIndex = currentArtist.ImagePaths.Count - 1;
 
             string imagePath = currentArtist.ImagePaths[currentImageIndex];
-            label2.Text = Path.GetFileNameWithoutExtension(imagePath);
+            labelName.Text = Path.GetFileNameWithoutExtension(imagePath);
 
             try
             {
-                if (pictureBox1.Image != null)
+                if (galleryPicture.Image != null)
                 {
-                    pictureBox1.Image.Dispose();
-                    pictureBox1.Image = null;
+                    galleryPicture.Image.Dispose();
+                    galleryPicture.Image = null;
                 }
 
                 using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
                 {
-                    pictureBox1.Image = Image.FromStream(fs);
+                    galleryPicture.Image = Image.FromStream(fs);
                 }
             }
             catch
@@ -83,8 +83,8 @@ namespace LAB_6
                 MessageBox.Show("Не удалось загрузить изображение:\n" + imagePath);
             }
 
-            button1.Enabled = currentImageIndex > 0;
-            button2.Enabled = currentImageIndex < currentArtist.ImagePaths.Count - 1;
+            buttonBack.Enabled = currentImageIndex > 0;
+            buttonNext.Enabled = currentImageIndex < currentArtist.ImagePaths.Count - 1;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -121,31 +121,6 @@ namespace LAB_6
         {
             if (mainForm != null && !mainForm.Visible)
                 Application.Exit();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

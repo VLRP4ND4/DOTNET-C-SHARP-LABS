@@ -28,51 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelChooseAuthor = new System.Windows.Forms.Label();
+            this.buttonChooseAuthor = new System.Windows.Forms.Button();
+            this.comboBoxChooseAuthor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // label1
+            // labelChooseAuthor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(114, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Выбери художника";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelChooseAuthor.AutoSize = true;
+            this.labelChooseAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelChooseAuthor.Location = new System.Drawing.Point(114, 31);
+            this.labelChooseAuthor.Name = "labelChooseAuthor";
+            this.labelChooseAuthor.Size = new System.Drawing.Size(181, 24);
+            this.labelChooseAuthor.TabIndex = 0;
+            this.labelChooseAuthor.Text = "Выбери художника";
             // 
-            // button1
+            // buttonChooseAuthor
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(58, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(280, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Выбрать художника\r\n\r\n";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonChooseAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonChooseAuthor.Location = new System.Drawing.Point(58, 403);
+            this.buttonChooseAuthor.Name = "buttonChooseAuthor";
+            this.buttonChooseAuthor.Size = new System.Drawing.Size(280, 28);
+            this.buttonChooseAuthor.TabIndex = 2;
+            this.buttonChooseAuthor.Text = "Выбрать художника\r\n\r\n";
+            this.buttonChooseAuthor.UseVisualStyleBackColor = true;
+            this.buttonChooseAuthor.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // comboBoxChooseAuthor
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 78);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(338, 32);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxChooseAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxChooseAuthor.FormattingEnabled = true;
+            this.comboBoxChooseAuthor.Location = new System.Drawing.Point(32, 78);
+            this.comboBoxChooseAuthor.Name = "comboBoxChooseAuthor";
+            this.comboBoxChooseAuthor.Size = new System.Drawing.Size(338, 32);
+            this.comboBoxChooseAuthor.TabIndex = 4;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 461);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBoxChooseAuthor);
+            this.Controls.Add(this.buttonChooseAuthor);
+            this.Controls.Add(this.labelChooseAuthor);
             this.Name = "FormMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormMain_Load);
@@ -83,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label labelChooseAuthor;
+        private System.Windows.Forms.Button buttonChooseAuthor;
+        private System.Windows.Forms.ComboBox comboBoxChooseAuthor;
     }
 }

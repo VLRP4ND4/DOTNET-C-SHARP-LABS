@@ -25,8 +25,8 @@ namespace LAB_6
         {
             LoadArtists();
 
-            comboBox1.DataSource = null;
-            comboBox1.DataSource = artists;
+            comboBoxChooseAuthor.DataSource = null;
+            comboBoxChooseAuthor.DataSource = artists;
 
             this.FormClosed += WinFormClosed;
         }
@@ -81,13 +81,13 @@ namespace LAB_6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem == null)
+            if (comboBoxChooseAuthor.SelectedItem == null)
             {
                 MessageBox.Show("Выберите автора.");
                 return;
             }
 
-            Artist selectedArtist = comboBox1.SelectedItem as Artist;
+            Artist selectedArtist = comboBoxChooseAuthor.SelectedItem as Artist;
 
             if (selectedArtist == null)
             {
@@ -98,16 +98,6 @@ namespace LAB_6
             FormGallery gallery = new FormGallery(selectedArtist, this);
             gallery.Show();
             this.Hide();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

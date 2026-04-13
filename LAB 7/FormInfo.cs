@@ -1,20 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LAB_7
 {
     public partial class FormInfo : Form
     {
-        public FormInfo()
+        public FormInfo(string title, string content)
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
+
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new System.Drawing.Point(0, 0);
+
+            Text = title;
+            labelInfo.Text = content;
+        }
+
+        public void SetInfo(string title, string content)
+        {
+            Text = title;
+            labelInfo.Text = content;
         }
     }
 }

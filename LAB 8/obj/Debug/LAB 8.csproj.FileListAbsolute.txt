@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\bin\Debug\LAB 8.exe.config
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\bin\Debug\LAB 8.exe
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\bin\Debug\LAB 8.pdb
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB 8.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB 8.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB 8.exe
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB 8.pdb
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB 8.exe.config
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB_8.FormMain.resources
+C:\Users\Admin\source\repos\DOTNET-C-SHARP-LABS\LAB 8\obj\Debug\LAB 8.csproj.GenerateResource.cache
