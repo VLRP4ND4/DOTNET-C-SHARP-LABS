@@ -6,13 +6,18 @@ namespace LAB_7
 {
     public partial class FormMain : Form
     {
-        private FormInfo infoForm;
+        //private FormInfo infoForm;
+        private FormInfo teachersForm;
+        private FormInfo studentsForm;
 
         public FormMain()
         {
             InitializeComponent();
             IsMdiContainer = true;
             InitializeTrayMenu();
+
+            if (this.Icon != null)
+                notifyIcon1.Icon = this.Icon;
         }
 
         private void InitializeTrayMenu()
@@ -21,53 +26,53 @@ namespace LAB_7
             notifyIcon1.Text = "LAB 7. UNIVERSITY";
             notifyIcon1.Icon = this.Icon;
             notifyIcon1.ContextMenuStrip = contextMenuStrip1;
-            notifyIcon1.DoubleClick += notifyIcon1_DoubleClick;
+            //notifyIcon1.DoubleClick += notifyIcon1_DoubleClick;
         }
 
         private void ShowFromTray()
         {
             Show();
-            WindowState = FormWindowState.Normal;
+            //WindowState = FormWindowState.Normal;
             ShowInTaskbar = true;
             notifyIcon1.Visible = false;
             Activate();
         }
 
-        private void OpenSingleChild(string title, string text)
+        private void OpenSingleChild(ref FormInfo form, string title, string text)
         {
-            if (infoForm != null && !infoForm.IsDisposed)
+            if (form == null || form.IsDisposed)
             {
-                infoForm.SetInfo(title, text);
-                infoForm.Location = new Point(0, 0);
-                infoForm.Activate();
-                return;
+                form = new FormInfo(title, text);
+                form.MdiParent = this;
+                form.Show();
             }
-
-            infoForm = new FormInfo(title, text);
-            infoForm.MdiParent = this;
-            infoForm.Show();
-            infoForm.Location = new Point(0, 0);
+            else
+            {
+                form.Activate();
+            }
         }
 
         private void сведенияОПреподавателяхToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenSingleChild(
+                ref teachersForm,
                 "Сведения о преподавателях",
-                "Преподаватели:\r\n 1. Иванов И.И.\r\n 2. Петров П.П.\r\n 3. Сидорова А.А.\r\n 4. Слепцов А.В."
+                "Преподаватели:\r\n1. Иванов И.И.\r\n2. Петров П.П.\r\n3. Сидорова А.А."
             );
         }
 
         private void сведенияОСтудентахToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenSingleChild(
+                ref studentsForm,
                 "Сведения о студентах",
-                "Студенты:\r\n 1. Алексеев А.А.\r\n 2. Борисов Б.Б.\r\n 3. Васильева В.В.\r\n 4. Гоголев В.Г.\r\n 5. Иванова В.А.\r\n 6. Лапкин И.С.\r\n 7. Буйский Л.С.\r\n 8. Смирнов Э.З"
+                "Студенты:\r\n1. Алексеев А.А.\r\n2. Борисов Б.Б.\r\n3. Васильева В.В.\r\n 4. Алексеева Ю.А.\r\n 5. Гоголев В.Г.\r\n 6. Иванова В.А."
             );
         }
 
         private void свернутьВТрейToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Hide();
+            this.Hide();
             ShowInTaskbar = false;
             notifyIcon1.Visible = true;
         }
@@ -91,14 +96,19 @@ namespace LAB_7
             ShowFromTray();
         }
 
-        private void toolStripMenuItemOpen_Click(object sender, EventArgs e)
-        {
-            ShowFromTray();
-        }
+        //private void toolStripMenuItemOpen_Click(object sender, EventArgs e)
+        //{
+        //    ShowFromTray();
+        //}
 
         private void notifyIcon1_DoubleClick(object sender, EventArgs e)
         {
             ShowFromTray();
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

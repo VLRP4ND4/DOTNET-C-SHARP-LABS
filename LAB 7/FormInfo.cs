@@ -8,10 +8,10 @@ namespace LAB_7
         public FormInfo(string title, string content)
         {
             InitializeComponent();
-            FormBorderStyle = FormBorderStyle.None;
 
-            this.StartPosition = FormStartPosition.Manual;
-            this.Location = new System.Drawing.Point(0, 0);
+            ControlBox = false;
+            MinimizeBox = false;
+            MaximizeBox = false;
 
             Text = title;
             labelInfo.Text = content;
