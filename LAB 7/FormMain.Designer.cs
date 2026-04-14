@@ -61,14 +61,14 @@
             // сведенияОПреподавателяхToolStripMenuItem
             // 
             this.сведенияОПреподавателяхToolStripMenuItem.Name = "сведенияОПреподавателяхToolStripMenuItem";
-            this.сведенияОПреподавателяхToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.сведенияОПреподавателяхToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
             this.сведенияОПреподавателяхToolStripMenuItem.Text = "Сведения о преподавателях";
             this.сведенияОПреподавателяхToolStripMenuItem.Click += new System.EventHandler(this.сведенияОПреподавателяхToolStripMenuItem_Click);
             // 
             // сведенияОСтудентахToolStripMenuItem
             // 
             this.сведенияОСтудентахToolStripMenuItem.Name = "сведенияОСтудентахToolStripMenuItem";
-            this.сведенияОСтудентахToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.сведенияОСтудентахToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
             this.сведенияОСтудентахToolStripMenuItem.Text = "Сведения о студентах";
             this.сведенияОСтудентахToolStripMenuItem.Click += new System.EventHandler(this.сведенияОСтудентахToolStripMenuItem_Click);
             // 
@@ -142,8 +142,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "LAB 7. UNIVERSITY";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
-            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);

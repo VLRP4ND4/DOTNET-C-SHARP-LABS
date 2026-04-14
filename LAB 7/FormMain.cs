@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace LAB_7
 {
     public partial class FormMain : Form
     {
-        //private FormInfo infoForm;
         private FormInfo teachersForm;
         private FormInfo studentsForm;
 
@@ -26,16 +24,26 @@ namespace LAB_7
             notifyIcon1.Text = "LAB 7. UNIVERSITY";
             notifyIcon1.Icon = this.Icon;
             notifyIcon1.ContextMenuStrip = contextMenuStrip1;
-            //notifyIcon1.DoubleClick += notifyIcon1_DoubleClick;
         }
 
         private void ShowFromTray()
         {
-            Show();
-            //WindowState = FormWindowState.Normal;
-            ShowInTaskbar = true;
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            this.ShowInTaskbar = true;
             notifyIcon1.Visible = false;
-            Activate();
+
+            foreach (Form child in this.MdiChildren)
+            {
+                child.Show();
+            }
+
+            this.Activate();
+        }
+
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            ShowFromTray();
         }
 
         private void OpenSingleChild(ref FormInfo form, string title, string text)
@@ -72,6 +80,11 @@ namespace LAB_7
 
         private void свернутьВТрейToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (Form child in this.MdiChildren)
+            {
+                child.Hide();
+            }
+
             this.Hide();
             ShowInTaskbar = false;
             notifyIcon1.Visible = true;
@@ -94,21 +107,6 @@ namespace LAB_7
         private void развернутьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowFromTray();
-        }
-
-        //private void toolStripMenuItemOpen_Click(object sender, EventArgs e)
-        //{
-        //    ShowFromTray();
-        //}
-
-        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
-        {
-            ShowFromTray();
-        }
-
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
