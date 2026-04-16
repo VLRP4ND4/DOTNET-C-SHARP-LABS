@@ -5,6 +5,8 @@ namespace LAB_7
 {
     public partial class FormMain : Form
     {
+        private FormWindowState oldState;
+
         private FormInfo teachersForm;
         private FormInfo studentsForm;
 
@@ -13,9 +15,6 @@ namespace LAB_7
             InitializeComponent();
             IsMdiContainer = true;
             InitializeTrayMenu();
-
-            if (this.Icon != null)
-                notifyIcon1.Icon = this.Icon;
         }
 
         private void InitializeTrayMenu()
@@ -28,22 +27,16 @@ namespace LAB_7
 
         private void ShowFromTray()
         {
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
-            this.ShowInTaskbar = true;
+            Show();
+            ShowInTaskbar = true;
             notifyIcon1.Visible = false;
 
+            this.WindowState = oldState;
+
             foreach (Form child in this.MdiChildren)
-            {
                 child.Show();
-            }
 
-            this.Activate();
-        }
-
-        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
-        {
-            ShowFromTray();
+            Activate();
         }
 
         private void OpenSingleChild(ref FormInfo form, string title, string text)
@@ -56,7 +49,7 @@ namespace LAB_7
             }
             else
             {
-                form.Activate();
+                form.BringToFront();
             }
         }
 
@@ -74,18 +67,19 @@ namespace LAB_7
             OpenSingleChild(
                 ref studentsForm,
                 "Сведения о студентах",
-                "Студенты:\r\n1. Алексеев А.А.\r\n2. Борисов Б.Б.\r\n3. Васильева В.В.\r\n 4. Алексеева Ю.А.\r\n 5. Гоголев В.Г.\r\n 6. Иванова В.А."
+                "Студенты:\r\n1. Алексеев А.А.\r\n2. Борисов Б.Б.\r\n3. Васильева В.В.\r\n4. Алексеева Ю.А.\r\n5. Гоголев В.Г.\r\n6. Иванова В.А."
             );
         }
 
         private void свернутьВТрейToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Form child in this.MdiChildren)
-            {
                 child.Hide();
-            }
 
-            this.Hide();
+            oldState = this.WindowState;
+            this.WindowState = FormWindowState.Normal;
+
+            Hide();
             ShowInTaskbar = false;
             notifyIcon1.Visible = true;
         }
@@ -94,8 +88,6 @@ namespace LAB_7
         {
             if (ActiveMdiChild != null)
                 ActiveMdiChild.Close();
-            else
-                MessageBox.Show("Нечего закрывать.");
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +99,12 @@ namespace LAB_7
         private void развернутьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowFromTray();
+        }
+
+        private void выходИзТреяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            notifyIcon1.Visible = false;
+            Application.Exit();
         }
     }
 }

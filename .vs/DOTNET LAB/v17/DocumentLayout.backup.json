@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|c:\\users\\admin\\source\\repos\\dotnet-c-sharp-labs\\lab 7\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|c:\\users\\admin\\source\\repos\\dotnet-c-sharp-labs\\lab 7\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|c:\\users\\admin\\source\\repos\\dotnet-c-sharp-labs\\lab 7\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|c:\\users\\admin\\source\\repos\\dotnet-c-sharp-labs\\lab 7\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\lab 7\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\lab 7\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\forminfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|c:\\users\\admin\\source\\repos\\dotnet-c-sharp-labs\\lab 7\\forminfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\forminfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|c:\\users\\admin\\source\\repos\\dotnet-c-sharp-labs\\lab 7\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17833801-B200-4BB7-9E03-7F7002D1A421}|LAB 7\\LAB 7.csproj|solutionrelative:lab 7\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,33 +42,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "FormMain.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormMain.Designer.cs",
+              "RelativeDocumentMoniker": "LAB 7\\FormMain.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormMain.Designer.cs",
+              "RelativeToolTip": "LAB 7\\FormMain.Designer.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAuwJ0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T15:33:07.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormInfo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormInfo.Designer.cs",
+              "RelativeDocumentMoniker": "LAB 7\\FormInfo.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormInfo.Designer.cs",
+              "RelativeToolTip": "LAB 7\\FormInfo.Designer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T15:33:06.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormMain.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormMain.cs",
               "RelativeDocumentMoniker": "LAB 7\\FormMain.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormMain.cs",
               "RelativeToolTip": "LAB 7\\FormMain.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T13:40:48.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FormInfo.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormInfo.cs",
               "RelativeDocumentMoniker": "LAB 7\\FormInfo.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormInfo.cs",
               "RelativeToolTip": "LAB 7\\FormInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T13:40:46.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "FormMain.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormMain.cs",
+              "RelativeDocumentMoniker": "LAB 7\\FormMain.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormMain.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "LAB 7\\FormMain.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T15:40:40.975Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormInfo.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\DOTNET-C-SHARP-LABS\\LAB 7\\FormInfo.cs",
               "RelativeDocumentMoniker": "LAB 7\\FormInfo.cs",

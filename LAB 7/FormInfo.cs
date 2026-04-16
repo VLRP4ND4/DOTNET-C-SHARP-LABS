@@ -8,18 +8,13 @@ namespace LAB_7
         {
             InitializeComponent();
 
-            ControlBox = false;
+            Text = title;
+            labelInfo.Text = content;
+
+            FormBorderStyle = FormBorderStyle.Sizable;
+            ControlBox = true;
             MinimizeBox = false;
             MaximizeBox = false;
-
-            Text = title;
-            labelInfo.Text = content;
-        }
-
-        public void SetInfo(string title, string content)
-        {
-            Text = title;
-            labelInfo.Text = content;
         }
     }
 }

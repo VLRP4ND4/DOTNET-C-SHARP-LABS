@@ -26,14 +26,13 @@
             this.сведенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сведенияОПреподавателяхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сведенияОСтудентахToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.окноToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.свернутьВТрейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.закрытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.развернутьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходИзТреяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.свернутьТрейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.закрытьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +41,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.сведенияToolStripMenuItem,
-            this.окноToolStripMenuItem});
+            this.свернутьТрейToolStripMenuItem,
+            this.закрытьToolStripMenuItem1,
+            this.выходToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -72,37 +73,6 @@
             this.сведенияОСтудентахToolStripMenuItem.Text = "Сведения о студентах";
             this.сведенияОСтудентахToolStripMenuItem.Click += new System.EventHandler(this.сведенияОСтудентахToolStripMenuItem_Click);
             // 
-            // окноToolStripMenuItem
-            // 
-            this.окноToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.свернутьВТрейToolStripMenuItem,
-            this.закрытьToolStripMenuItem,
-            this.выходToolStripMenuItem});
-            this.окноToolStripMenuItem.Name = "окноToolStripMenuItem";
-            this.окноToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.окноToolStripMenuItem.Text = "Окно";
-            // 
-            // свернутьВТрейToolStripMenuItem
-            // 
-            this.свернутьВТрейToolStripMenuItem.Name = "свернутьВТрейToolStripMenuItem";
-            this.свернутьВТрейToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.свернутьВТрейToolStripMenuItem.Text = "Свернуть в трей";
-            this.свернутьВТрейToolStripMenuItem.Click += new System.EventHandler(this.свернутьВТрейToolStripMenuItem_Click);
-            // 
-            // закрытьToolStripMenuItem
-            // 
-            this.закрытьToolStripMenuItem.Name = "закрытьToolStripMenuItem";
-            this.закрытьToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.закрытьToolStripMenuItem.Text = "Закрыть";
-            this.закрытьToolStripMenuItem.Click += new System.EventHandler(this.закрытьToolStripMenuItem_Click);
-            // 
-            // выходToolStripMenuItem
-            // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -123,13 +93,33 @@
             this.выходИзТреяToolStripMenuItem.Name = "выходИзТреяToolStripMenuItem";
             this.выходИзТреяToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.выходИзТреяToolStripMenuItem.Text = "Выход";
-            this.выходИзТреяToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            this.выходИзТреяToolStripMenuItem.Click += new System.EventHandler(this.выходИзТреяToolStripMenuItem_Click);
             // 
             // notifyIcon1
             // 
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "LAB 7";
-            this.notifyIcon1.DoubleClick += new System.EventHandler(this.notifyIcon1_DoubleClick);
+            // 
+            // свернутьТрейToolStripMenuItem
+            // 
+            this.свернутьТрейToolStripMenuItem.Name = "свернутьТрейToolStripMenuItem";
+            this.свернутьТрейToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.свернутьТрейToolStripMenuItem.Text = "Свернуть трей";
+            this.свернутьТрейToolStripMenuItem.Click += new System.EventHandler(this.свернутьВТрейToolStripMenuItem_Click);
+            // 
+            // закрытьToolStripMenuItem1
+            // 
+            this.закрытьToolStripMenuItem1.Name = "закрытьToolStripMenuItem1";
+            this.закрытьToolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
+            this.закрытьToolStripMenuItem1.Text = "Закрыть";
+            this.закрытьToolStripMenuItem1.Click += new System.EventHandler(this.закрытьToolStripMenuItem_Click);
+            // 
+            // выходToolStripMenuItem1
+            // 
+            this.выходToolStripMenuItem1.Name = "выходToolStripMenuItem1";
+            this.выходToolStripMenuItem1.Size = new System.Drawing.Size(53, 20);
+            this.выходToolStripMenuItem1.Text = "Выход";
+            this.выходToolStripMenuItem1.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -141,6 +131,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LAB 7. UNIVERSITY";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -156,13 +147,12 @@
         private System.Windows.Forms.ToolStripMenuItem сведенияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сведенияОПреподавателяхToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сведенияОСтудентахToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem окноToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem свернутьВТрейToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem закрытьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem развернутьToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходИзТреяToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ToolStripMenuItem свернутьТрейToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem закрытьToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem1;
     }
 }
