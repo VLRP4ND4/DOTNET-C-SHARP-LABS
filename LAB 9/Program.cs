@@ -8,7 +8,6 @@ namespace LAB_9
     {
         static void Main(string[] args)
         {
-            // Таблица "Студенты"
             var students = new[]
             {
                 new Student { StudentId = 1,   Surname = "Иванов",   Name = "Иван",  Stipend = 150,   Kurs = 1, City = "Орел",    Birthday = new DateTime(1982, 3, 12),  UnivId = 10 },
@@ -20,7 +19,6 @@ namespace LAB_9
                 new Student { StudentId = 100, Surname = "Иванов",   Name = "Иван",  Stipend = 0,     Kurs = 4, City = "Якутск",  Birthday = new DateTime(2000, 12, 12), UnivId = 12 }
             };
 
-            // Таблица "Экзаменационные оценки"
             var exams = new[]
             {
                 new Exam { ExamId = 145, StudentId = 12,  SubjId = 10, Mark = 5, ExamDate = new DateTime(2000, 1, 12) },
@@ -31,7 +29,6 @@ namespace LAB_9
                 new Exam { ExamId = 43,  StudentId = 6,   SubjId = 22, Mark = 4, ExamDate = new DateTime(2000, 1, 18) }
             };
 
-            // Таблица "Преподаватели"
             var lecturers = new[]
             {
                 new Lecturer { LecturerId = 24,  Surname = "Колесников", Name = "Борис",   City = "Воронеж", SubjId = 10 },
@@ -42,7 +39,6 @@ namespace LAB_9
                 new Lecturer { LecturerId = 328, Surname = "Сорокин",    Name = "Павел",   City = "Орел",    SubjId = 10 }
             };
 
-            // Таблица "Предметы"
             var subjects = new[]
             {
                 new Subject { SubjId = 10, SubjName = "Информатика", Hour = 56, Semester = 1 },
@@ -53,7 +49,9 @@ namespace LAB_9
                 new Subject { SubjId = 56, SubjName = "История",      Hour = 34, Semester = 4 }
             };
 
-            // 1. Сведения о студентах, фамилии или имена которых начинаются на "И"
+            //-------------------------------------------------------------------------------------------------------------------------------
+
+            // 1
             Console.WriteLine("1. Студенты, у которых фамилия или имя начинается на 'И':");
             var q1 =
                 from s in students
@@ -67,7 +65,7 @@ namespace LAB_9
 
             Console.WriteLine();
 
-            // 2. Данные об оценках студентов второго курса, отсортированные по фамилии
+            // 2
             Console.WriteLine("2. Оценки студентов 2 курса, отсортированные по фамилии:");
             var q2 =
                 from s in students
@@ -90,7 +88,7 @@ namespace LAB_9
 
             Console.WriteLine();
 
-            // 3. Фамилии преподавателей и названия предметов, которые они ведут
+            // 3
             Console.WriteLine("3. Преподаватели и предметы:");
             var q3 =
                 from l in lecturers
@@ -109,7 +107,7 @@ namespace LAB_9
 
             Console.WriteLine();
 
-            // 4. Фамилии и имена студентов, обучающихся на курсе не ниже 3 и получающих наибольшую стипендию
+            // 4
             Console.WriteLine("4. Студенты курса >= 3 с максимальной стипендией:");
             var maxStipend = students
                 .Where(s => s.Kurs >= 3)
@@ -133,7 +131,7 @@ namespace LAB_9
 
             Console.WriteLine();
 
-            // 5. Средняя оценка студентов по информатике, округлить до 1 знака
+            // 5
             Console.WriteLine("5. Средняя оценка по информатике:");
             var avgInfo =
                 (from e in exams
@@ -147,6 +145,8 @@ namespace LAB_9
             Console.ReadKey();
         }
     }
+
+    //-------------------------------------------------------------------------------------------------------------------------------
 
     class Student
     {

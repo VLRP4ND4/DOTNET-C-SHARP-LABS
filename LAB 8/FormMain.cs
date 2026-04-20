@@ -262,50 +262,5 @@ namespace LAB_8
                 return Convert.ToInt32(cmd.ExecuteScalar());
             }
         }
-
-        //private void groupBox2_Enter(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void groupBox3_Enter(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void textBoxAddName_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void comboBoxAddUniversity_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void numericUpDownAddCourse_ValueChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void dateTimePickerAddBirthday_ValueChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void textBox2_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void textBoxCity_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void textBoxAddSurname_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
     }
 }
