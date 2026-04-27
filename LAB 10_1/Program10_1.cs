@@ -13,7 +13,8 @@ namespace Lab10_1
             {
                 "Харрисон Форд",
                 "Эмма Уотсон",
-                "Иэн Маккеллен"
+                "Иэн Маккеллен",
+                "Киану Ривз"
             };
 
             List<MovieInfo> movies = new List<MovieInfo>
@@ -32,6 +33,11 @@ namespace Lab10_1
                 {
                     Title = "Гарри Поттер",
                     Description = "Фильм о юном волшебнике и его друзьях."
+                },
+                new MovieInfo
+                {
+                    Title = "Джон Уик",
+                    Description = "Крутой мужик бегает и стреляет."
                 }
             };
 
