@@ -10,7 +10,7 @@ namespace LAB_12
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaintForm());
+            Application.Run(new PhotoEditorForm());
         }
     }
 }

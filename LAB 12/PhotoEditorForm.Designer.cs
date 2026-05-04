@@ -30,10 +30,6 @@
         {
             this.pictureBoxOriginal = new System.Windows.Forms.PictureBox();
             this.pictureBoxResult = new System.Windows.Forms.PictureBox();
-            this.buttonThreshold = new System.Windows.Forms.Button();
-            this.buttonBrightness = new System.Windows.Forms.Button();
-            this.buttonContrast = new System.Windows.Forms.Button();
-            this.buttonBlur = new System.Windows.Forms.Button();
             this.trackBarBrightness = new System.Windows.Forms.TrackBar();
             this.trackBarContrast = new System.Windows.Forms.TrackBar();
             this.trackBarBlur = new System.Windows.Forms.TrackBar();
@@ -52,8 +48,12 @@
             this.numericHeight = new System.Windows.Forms.NumericUpDown();
             this.labelBlurValue = new System.Windows.Forms.Label();
             this.trackBarSharpen = new System.Windows.Forms.TrackBar();
+            this.buttonThreshold = new System.Windows.Forms.Button();
+            this.buttonBlur = new System.Windows.Forms.Button();
             this.buttonSharpen = new System.Windows.Forms.Button();
             this.buttonResize = new System.Windows.Forms.Button();
+            this.buttonContrast = new System.Windows.Forms.Button();
+            this.buttonBrightness = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOriginal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResult)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarBrightness)).BeginInit();
@@ -79,48 +79,12 @@
             // pictureBoxResult
             // 
             this.pictureBoxResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxResult.Location = new System.Drawing.Point(664, 27);
+            this.pictureBoxResult.Location = new System.Drawing.Point(652, 27);
             this.pictureBoxResult.Name = "pictureBoxResult";
             this.pictureBoxResult.Size = new System.Drawing.Size(600, 400);
             this.pictureBoxResult.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxResult.TabIndex = 1;
             this.pictureBoxResult.TabStop = false;
-            // 
-            // buttonThreshold
-            // 
-            this.buttonThreshold.Location = new System.Drawing.Point(58, 702);
-            this.buttonThreshold.Name = "buttonThreshold";
-            this.buttonThreshold.Size = new System.Drawing.Size(202, 46);
-            this.buttonThreshold.TabIndex = 3;
-            this.buttonThreshold.Text = "Бинаризация";
-            this.buttonThreshold.UseVisualStyleBackColor = true;
-            // 
-            // buttonBrightness
-            // 
-            this.buttonBrightness.Location = new System.Drawing.Point(58, 442);
-            this.buttonBrightness.Name = "buttonBrightness";
-            this.buttonBrightness.Size = new System.Drawing.Size(202, 46);
-            this.buttonBrightness.TabIndex = 4;
-            this.buttonBrightness.Text = "Яркость";
-            this.buttonBrightness.UseVisualStyleBackColor = true;
-            // 
-            // buttonContrast
-            // 
-            this.buttonContrast.Location = new System.Drawing.Point(58, 494);
-            this.buttonContrast.Name = "buttonContrast";
-            this.buttonContrast.Size = new System.Drawing.Size(202, 46);
-            this.buttonContrast.TabIndex = 5;
-            this.buttonContrast.Text = "Контраст";
-            this.buttonContrast.UseVisualStyleBackColor = true;
-            // 
-            // buttonBlur
-            // 
-            this.buttonBlur.Location = new System.Drawing.Point(58, 650);
-            this.buttonBlur.Name = "buttonBlur";
-            this.buttonBlur.Size = new System.Drawing.Size(202, 46);
-            this.buttonBlur.TabIndex = 7;
-            this.buttonBlur.Text = "Сглаживание";
-            this.buttonBlur.UseVisualStyleBackColor = true;
             // 
             // trackBarBrightness
             // 
@@ -167,19 +131,21 @@
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
             this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.загрузитьToolStripMenuItem.Text = "Загрузить";
-            this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.загрузиттToolStripMenuItem_Click);
+            this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.загрузитьToolStripMenuItem_Click);
             // 
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
             // 
             // сброситьToolStripMenuItem
             // 
             this.сброситьToolStripMenuItem.Name = "сброситьToolStripMenuItem";
             this.сброситьToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.сброситьToolStripMenuItem.Text = "Сбросить";
+            this.сброситьToolStripMenuItem.Click += new System.EventHandler(this.сброситьToolStripMenuItem_Click);
             // 
             // labelBrightnessValue
             // 
@@ -189,7 +155,6 @@
             this.labelBrightnessValue.Size = new System.Drawing.Size(66, 13);
             this.labelBrightnessValue.TabIndex = 15;
             this.labelBrightnessValue.Text = "значение: 0";
-            this.labelBrightnessValue.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelContrastValue
             // 
@@ -233,7 +198,6 @@
             this.labelW.Size = new System.Drawing.Size(45, 13);
             this.labelW.TabIndex = 21;
             this.labelW.Text = "ширина";
-            this.labelW.Click += new System.EventHandler(this.label6_Click);
             // 
             // labelH
             // 
@@ -243,7 +207,6 @@
             this.labelH.Size = new System.Drawing.Size(44, 13);
             this.labelH.TabIndex = 23;
             this.labelH.Text = "высота";
-            this.labelH.Click += new System.EventHandler(this.label7_Click);
             // 
             // numericHeight
             // 
@@ -251,7 +214,6 @@
             this.numericHeight.Name = "numericHeight";
             this.numericHeight.Size = new System.Drawing.Size(344, 20);
             this.numericHeight.TabIndex = 22;
-            this.numericHeight.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // labelBlurValue
             // 
@@ -268,6 +230,24 @@
             this.trackBarSharpen.Name = "trackBarSharpen";
             this.trackBarSharpen.Size = new System.Drawing.Size(817, 45);
             this.trackBarSharpen.TabIndex = 25;
+            // 
+            // buttonThreshold
+            // 
+            this.buttonThreshold.Location = new System.Drawing.Point(58, 702);
+            this.buttonThreshold.Name = "buttonThreshold";
+            this.buttonThreshold.Size = new System.Drawing.Size(202, 46);
+            this.buttonThreshold.TabIndex = 3;
+            this.buttonThreshold.Text = "Бинаризация";
+            this.buttonThreshold.UseVisualStyleBackColor = true;
+            // 
+            // buttonBlur
+            // 
+            this.buttonBlur.Location = new System.Drawing.Point(58, 650);
+            this.buttonBlur.Name = "buttonBlur";
+            this.buttonBlur.Size = new System.Drawing.Size(202, 46);
+            this.buttonBlur.TabIndex = 7;
+            this.buttonBlur.Text = "Сглаживание";
+            this.buttonBlur.UseVisualStyleBackColor = true;
             // 
             // buttonSharpen
             // 
@@ -286,6 +266,24 @@
             this.buttonResize.TabIndex = 27;
             this.buttonResize.Text = "Изменить размер";
             this.buttonResize.UseVisualStyleBackColor = true;
+            // 
+            // buttonContrast
+            // 
+            this.buttonContrast.Location = new System.Drawing.Point(58, 494);
+            this.buttonContrast.Name = "buttonContrast";
+            this.buttonContrast.Size = new System.Drawing.Size(202, 46);
+            this.buttonContrast.TabIndex = 5;
+            this.buttonContrast.Text = "Контраст";
+            this.buttonContrast.UseVisualStyleBackColor = true;
+            // 
+            // buttonBrightness
+            // 
+            this.buttonBrightness.Location = new System.Drawing.Point(58, 442);
+            this.buttonBrightness.Name = "buttonBrightness";
+            this.buttonBrightness.Size = new System.Drawing.Size(202, 46);
+            this.buttonBrightness.TabIndex = 4;
+            this.buttonBrightness.Text = "Яркость";
+            this.buttonBrightness.UseVisualStyleBackColor = true;
             // 
             // PhotoEditorForm
             // 
@@ -338,10 +336,6 @@
 
         private System.Windows.Forms.PictureBox pictureBoxOriginal;
         private System.Windows.Forms.PictureBox pictureBoxResult;
-        private System.Windows.Forms.Button buttonThreshold;
-        private System.Windows.Forms.Button buttonBrightness;
-        private System.Windows.Forms.Button buttonContrast;
-        private System.Windows.Forms.Button buttonBlur;
         private System.Windows.Forms.TrackBar trackBarBrightness;
         private System.Windows.Forms.TrackBar trackBarContrast;
         private System.Windows.Forms.TrackBar trackBarBlur;
@@ -360,7 +354,11 @@
         private System.Windows.Forms.NumericUpDown numericHeight;
         private System.Windows.Forms.Label labelBlurValue;
         private System.Windows.Forms.TrackBar trackBarSharpen;
+        private System.Windows.Forms.Button buttonThreshold;
+        private System.Windows.Forms.Button buttonBlur;
         private System.Windows.Forms.Button buttonSharpen;
         private System.Windows.Forms.Button buttonResize;
+        private System.Windows.Forms.Button buttonContrast;
+        private System.Windows.Forms.Button buttonBrightness;
     }
 }
